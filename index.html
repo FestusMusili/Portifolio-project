@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fessy motors</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="output2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   
+
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+
+<body class="m-0 p-0">
+ 
+    <a class="floating-button" href="https://wa.me/+254700914360"><img src="images/whatsup.jpeg"></a>
+    <!-- header section -->
+    <section class="header ">
+<!-- header top -->
+        
+        
+        
+        
+        
+        
+        
+     <div class="top font-semibold" id="head">
+        <span>F</span>essy <span>M</span>otors <span>I</span>mports <span>L</span>imited
+     </div>
+<!-- main header -->
+     <div class="header2 p-3">
+
+       <div class="logo">
+
+        <a href="#" class="bars hidden  text-white "><i class=" text-3xl fas fa-bars -mb-2 p-1"></i>menu</a>
+        <a href="index.html"><img src="images/denis-logo.png"></a>
+        
+        <div class="links lg:w-full ">
+            <a href="#home" class="hover: hover:bg-black"><i class="fas fa-home "></i>Home</a>
+            <a href="#contacts" class="hover: hover:bg-black"><i class="fas fa-envelope"></i>Contacts</a>
+            <a href="#about" class="hover: hover:bg-black"><i class="fas fa-info"></i>About Us</a>
+            <a href="#reviewList" class="hover: hover:bg-black"><i class="fas fa-thumbs-up"></i>Testmonials</a>
+            <a href="#location" class="hover: hover:bg-black"><i class="fas fa-location"></i>Location</a>
+            <a href="#q&a" class="hover: hover:bg-black"><i class="fas fa-location"></i>Q&A</a>
+          
+        </div>
+       </div>
+    <!-- header right -->
+    
+    <div class="header-right">
+  
+               <div class=" right-1 text-white text-lg ">
+                <a href="#inquiry"><i class="memb fas fa-envelope "></i>&nbsp; Inquiry</a>
+                
+                    <div  class="member mt-1" id="member">
+                        <i class="fas fa-user text-white">
+
+                        </i><button id="memb" class="memb ">Member</button>
+                        
+                </div>
+       </div>
+       
+
+     </div>
+    </section>
+    <!-- login register form -->
+    <style>
+       
+          .logs {
+            transition: 1s;
+            display: none;
+           margin-top: -60rem;
+           position: absolute;
+           top: 0;
+           left: 0;
+           width: 100%;
+           height: 100%;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+            z-index: 999;
+         }
+         .logs.active{
+             margin-top: 0;
+             transition: 1s;
+         }
+         .messageContainer{
+            position: absolute;
+            width: 100%;
+            top: 0;
+            color: green;
+            font-size: 2rem;
+         }
+                 
+                 
+                .logs .container{
+                   
+                   width: 100%;
+                   height: 90vh;
+                   background-image: linear-gradient(rgba(0,0,50,0.8),rgba(0,0,50,0.8));
+                   background-position: center;
+                   position: relative;
+                   background-size: cover;
+                   
+                 }
+                 .logs .form-box{
+                   width: 100%;
+                   max-width: 450px;
+                   position: absolute;
+                   top: 50%;
+                   left: 50%;
+                   transform: translate(-50%,-50%);
+                   background: #fff;
+                   padding: 50px 60px 70px;
+                   text-align: center;
+                 }
+                 .logs .form-box h1{
+                   font-size: 30px;
+                   margin-bottom: 60px;
+                   color: #3c00a0;
+                   position: relative;
+                 }
+                 .logs .form-box h1::after{
+                   content: '';
+                   width: 30px;
+                   height: 4px;
+                   border-radius: 3px;
+                   background: #3c00a0;
+                   position: absolute;
+                   bottom: -12px;
+                   left: 50%;
+                   transform: translate(-50%);
+                 }
+                 .logs .input-field{
+                   background: #eaeaea;
+                   margin: 15px 0;
+                   border-radius: 3px;
+                   display: flex;
+                   align-items: center;
+                   max-height: 65px;
+                   transition: max-height 0.5s;
+                   overflow: hidden;
+                 }
+                 .logs input{
+                   padding: .8rem;
+                   width: 100%;
+                   background: transparent;
+                   border: 0;
+                   outline: 0;
+                   
+                 }
+                 .logs .input-field i{
+                   margin-left: 15px;
+                   color: #999;
+                 }
+                 .logs form p{
+                   text-align: left;
+                   font-size: 13px;
+                 }
+                 .logs form p a{
+                   text-decoration: none;
+                   color: #3c00a0;
+                 }
+                 .logs .btn-field{
+                   width: 100%;
+                   display: flex;
+                   justify-content: space-between;
+                 }
+                 .logs .btn-field button{
+                   flex-basis: 48%;
+                   background: #3c00a0;
+                   color: #fff;
+                   height: 40px;
+                   border-radius: 20px;
+                   border:0;
+                   outline: 0;
+                   cursor: pointer;
+                   transition: background 1s;
+                 }
+                 .logs .input-group{
+                   height: 280px;
+               
+                 }
+                 .logs .btn-field button.disabled{
+                   background: #eaeaea;
+                   color:#555 ;
+                 }
+                 .close{
+                    background: #eaeaea;
+                    font-size: 2.4rem;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    color: red;
+                    cursor: pointer;
+                 }
+               
+                </style>
+               
+               
+               <div class="logs hidden" id="logs">
+               
+               <div class="container ">
+                <i class="close fa-solid fa-xmark" id="close"></i>
+                
+                 <div class="form-box">
+                    <div class="messageContainer" id="messageContainer"></div>
+                   <h1 id="title">Sign Up</h1>
+                   <p id="error" class="error text-red-500 bg-red-600 hidden">error wrong cridentials</p>
+                       <form  method="POST" id="login-form" class="transparent-form" >
+                        <div class="input-group">
+                          <div class="input-field" id="nameField">
+                           <i class="fa-solid fa-user"></i>
+                           <input name="username" id="username" type="text" placeholder="name">
+                          </div>
+                         
+                          <div class="input-field">
+                           <i class="fa-solid fa-envelope"></i>
+                           <input name="email" id="email" type="text" placeholder="email" required>
+                          </div>
+                          <p id="error"class="text-red-600 hidden" >wrong email</p>
+                          <div class="input-field">
+                           <i class="fa-solid fa-user"></i>
+                           <input name="password" id="password" type="password" placeholder="password" required>
+                          </div>
+                          <p id="error"class="text-red-600 hidden" >wrong password</p>
+                          <p>Forgot Password<a href="#">click here</a></p>
+                        </div>
+                        <div class="btn-field">
+                         <button type="submit" id="signupBtn">Sign Up</button>
+                         <button type="submit" class="disabled" id="signinBtn">Sign In</button>
+                        </div>
+                        </form>
+                  </div>
+                 </div>
+               </div>
+               <!-- script for login and register forms -->
+ <script>
+                
+              // JavaScript Code
+const form = document.getElementById('login-form');
+const signupBtn = document.getElementById('signupBtn');
+const signinBtn = document.getElementById('signinBtn');
+const nameField = document.getElementById('nameField');
+const title = document.getElementById('title');
+const close = document.getElementById('close');
+const longs = document.getElementById('logs');
+const member = document.getElementById('member');
+
+
+let isSignUp = true;
+function toggleForm() {
+  // No need to toggle if already in the current state
+  if ((isSignUp && this.id === 'signupBtn') || (!isSignUp && this.id === 'signinBtn')) {
+    return;
+  }
+
+  if (isSignUp) {
+    nameField.style.maxHeight = '0';
+    title.innerHTML = 'Sign In';
+    signupBtn.classList.add('disabled');
+    signinBtn.classList.remove('disabled');
+  } else {
+    nameField.style.maxHeight = '60px';
+    title.innerHTML = 'Sign Up';
+    signupBtn.classList.remove('disabled');
+    signinBtn.classList.add('disabled');
+  }
+  isSignUp = !isSignUp;
+}
+
+function handleFormSubmit(event) {
+  event.preventDefault();
+  const username = document.getElementById('username').value;
+  const email = document.getElementById('email').value;
+  const password = document.getElementById('password').value;
+  const error = document.getElementById('error')
+  const passwords = document.getElementById('password')
+  const emails = document.getElementById('email')
+  const formData = {
+    username,
+    email,
+    password,
+  };
+  const inputIds = ['username', 'email', 'password'];
+
+  // Function to clear input fields
+  function clearInputFields() {
+    inputIds.forEach((id) => {
+      document.getElementById(id).value = '';
+    });
+  }
+
+    // Handle Sign Up
+    fetch('http://localhost:4001/users', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log('Login response:', data);
+        if (data.message === 'Login successful') {
+      if (formData.email === 'admin@gmail.com' && formData.password === 'adminPassword') {
+        // Redirect to admin.html for admin login
+        window.location.href = 'admin.html';
+      } else if (formData.email === 'admin@gmail.com') {
+        // Handle incorrect password for admin
+        window.location.href = 'admin.html';
+        console.error('Incorrect password for admin');
+        error.style.display='none'
+        emails.style.border='1px solid grey'
+      passwords.style.border='1px solid grey'
+        clearInputFields()
+        // You can display an error message to the user
+      } else {
+        // Redirect to index.html for other successful logins
+        window.location.href = 'index.html';
+      }
+    } else {
+      // Handle login failure
+      console.error('Login failed:', data.message);
+      error.style.display='block'
+      emails.style.border='1px solid red'
+      passwords.style.border='1px solid red'
+      // You can display an error message to the user
+    }
+  })
+      .catch((error) => {
+        console.error('Error during login:', error);
+      });
+  }
+
+
+function clearInputFields() {
+  document.getElementById('email').value = '';
+  document.getElementById('password').value = ''
+}
+// Add event listener for form submission
+form.addEventListener('submit', handleFormSubmit);
+
+
+// Add event listener for member button
+member.onclick = function () {
+  longs.classList.toggle('active');
+};
+
+// Add event listener for close button
+close.onclick = function () {
+  longs.classList.toggle('active');
+};
+
+// Add event listener for form submission
+form.addEventListener('submit', handleFormSubmit);
+// Add click event listener to toggle the form between Sign Up and Sign In
+signupBtn.addEventListener('click', toggleForm);
+signinBtn.addEventListener('click', toggleForm);
+
+
+
+// Add click event listener for member button
+member.onclick = function () {
+  longs.classList.toggle('active');
+};
+
+// Add click event listener for close button
+close.onclick = function () {
+  longs.classList.toggle('active');
+};
+
+           
+    </script>
+
+
+
+<section>
+
+
+    <div class="containers">
+
+
+        <!-- left nav extends to the bottom -->
+    <nav class="">
+        <div class="left-nav">
+         <div class="bar"></div>
+         <h2>search by Maker</h2>
+         <div class="left-nav-list pl-2">
+            <ul>
+                <li><a href="cars.html#toyota" class="toyota">
+                    <img src="images/toyota1.jpeg">TOYOTA<span>()</span></a>
+                </li>
+
+                <li><a href="cars.html#nissan" id="nissan">
+                    <img src="images/nissan.jpeg">NISSAN<span>()</span></a>
+                </li>
+
+                <li><a href="cars.html#benz" class="benz">
+                    <img src="images/benz.jpeg">BENZ<span>()</span></a>
+                </li>
+
+                <li><a href="cars.html#mazda" class="mazda">
+                    <img src="images/mazda.jpeg">MAZDA<span>()</span></a>
+                </li>
+
+               
+                <li><a href="cars.html#subaru" class="subaru">
+                    <img src="images/subaru.jpeg">SUBARU<span>()</span></a>
+                </li>
+                <li><a href="cars.html#suzuki">
+                    <img src="images/suzuki.jpeg">SUZUKI<span>()</span></a>
+                </li>
+                <li><a href="cars.html">
+                    <img src="images/honda.jpeg">HONDA<span>()</span></a>
+                </li>
+                <li><a href="cars.html#bmw">
+                    <img src="images/bmw.png">BMW<span>(12)</span></a>
+                </li>
+                <li><a href="cars.html#volks">
+                    <img src="images/volks.jpeg">VOLKS<span>()</span></a>
+                </li>
+                <li><a href="cars.html#others">
+                    <img src="">OTHERS<span>()</span></a>
+                </li>
+               
+            </ul>
+         </div>
+
+         <!-- search by fob -->
+         <div class="bar"></div>
+         <h2>search by FOB price</h2>
+         
+         <div class="search-fob pl-6">
+         <ul>
+
+            <li class="pt-1"><a href="#cars-by-price">Over Ksh10 000 000</a></li>
+            <li class="pt-1"><a href="#cars-by-price">Under Ksh10 000 000</a></li>
+            <li class="pt-1"><a href="#cars-by-price">Under Ksh9 000 000</a></li>
+            <li class="pt-1"><a href="#cars-by-price">Under Ksh9 000 000</a></li>
+            <li class="pt-1"><a href="#cars-by-price">Under Ksh8 000 000</a></li>
+            <li class="pt-1"><a href="#cars-by-price">Under Ksh7 000 000</a></li>
+            <li class="pt-1"><a href="#cars-by-price">Under Ksh6 000 000</a></li>
+            <li class="pt-1"><a href="#cars-by-price">Under Ksh5 000 000</a></li>
+            <li class="pt-1"><a href="#cars-by-price">Under Ksh3 000 000</a></li>
+            <li class="pt-1"><a href="#cars-by-price">Under Ksh2 000 000</a></li>
+            <li class="pt-1"><a href="#cars-by-price">Under Ksh1 000 000</a></li>
+        </ul>
+         </div>
+
+         <div class="bar"></div>
+         <h2>search by Shape </h2>
+         <div >
+        <ul class="list-none">
+            <li class="pt-3"><a href="shape.html" class="flex text-blue-600">
+                <img src="images/coupe.png " class="w-12 mr-3">COUPE</a>
+            </li>
+            <li class="pt-3"><a href="shape.html" class="flex text-blue-600">
+                <img src="images/hatchback.png" class="w-12 mr-3">HATCHBACK</a>
+            </li>
+            <li class="pt-3"><a href="shape.html" class="flex text-blue-600">
+                <img src="images/sedan.png" class="w-12 mr-3">SEDAN</a>
+            </li>
+            <li class="pt-3"><a href="shape.html" class="flex text-blue-600">
+                <img src="images/pickup.png" class="w-12 mr-3">PICKUP</a>
+            </li>
+            <li class="pt-3"><a href="shape.html" class="flex text-blue-600">
+                <img src="images/micro.png" class="w-12 mr-3">MICRO</a>
+            </li>
+            <li class="pt-3"><a href="shape.html" class="flex text-blue-600">
+                <img src="images/van.png" class="w-12 mr-3">VAN</a>
+            </li>
+            <li class="pt-3"><a href="shape.html" class="flex text-blue-600">
+                <img src="images/truck.png" class="w-12 mr-3">TRUCK</a>
+            </li>
+            <li class="pt-3"><a href="shape.html" class="flex text-blue-600">
+                <img src="images/wagon.png" class="w-12 mr-3">WAGON</a>
+            </li>
+        </ul>
+         </div>
+
+         <div class="bar"></div>
+         <h2>search by year</h2>
+         <div class="flex-col">
+        <a  class="text-blue-600 "> <span>2019~</span></a></br>
+        <a  class="text-blue-600 "> <span>2017~2019</span></a></br>
+        <a  class="text-blue-600 "> <span>2014~2017</span></a></br>
+        <a  class="text-blue-600 "><span>2012~2014</span></a></br>
+        <a  class="text-blue-600 "> <span>~2012</span></a>
+        </div>
+        </div>
+        
+    </nav>
+
+
+    <!-- section slider starts all in the middle -->
+    <div class="slider ">
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper" id="swiperWrapper">
+            
+             
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
+           
+        </div> 
+        <form id="searchForm" method="" action="/cars">
+            <div class="search mt-3">
+              <input id="searchInput" type="search" placeholder="make, year, maker, model" required>
+              <button id="searchButton" >Search</button>
+            </div>
+          </form>
+          <div class="bar"></div>
+          <h2>your Cars</h2>
+          <div id="mainImageContainer" class="bg-slate-300"></div>
+          <div id="additionalImageContainer" class="mt-4 p-2 gap-2"></div>
+          
+          <div id="reservationFormContainer"></div>
+         
+              <div class="bar"></div>
+              <h2>All Cars</h2>
+              <div id="carList" class=" newcars   p-4 flex gap-2 uppercase overflow-scroll ">
+               </div>
+            <div id="paginationButtonsCarList" class="pagination-buttons-container"></div>
+
+            <!-- new arrivals -->
+            <div class="bar"></div>
+                <h2>New Arrivals</h2>
+                <div id="newArrivals" class=" w-full  newcars p-4 flex gap-2 uppercase ">
+                    </div>
+                     <div id="paginationButtonsNewArrivals" class="pagination-buttons-container"></div>
+                
+<!-- best deals cars -->
+        <div class="bar"></div>
+        <h2>Best Deals</h2>
+          <div id="bestList" class="bestdeals p-4 flex gap-4 sm:gap-2 uppercase overflow-scroll "> </div>           
+        <div id="paginationButtonsBestList" class="pagination-buttons-container"></div>
+
+        <div class="bar"></div>
+       
+        <!-- Pagination buttons containers -->
+<div class=" lg:hidden">
+<div class="bar"></div>
+<h2>search by Maker</h2>
+<div class="makerList pl-2 flex ">
+  <table class="w-full">
+      <tr >
+          <td ><a href="cars.html#toyota" class="toyota">
+              <img src="images/toyota1.jpeg">TOYOTA<span>()</span></a>
+          </td>
+   
+          <td><a href="cars.html#nissan" id="nissan">
+              <img src="images/nissan.jpeg">NISSAN<span>()</span></a>
+          </td>
+   
+          <td><a href="cars.html#benz" class="benz">
+              <img src="images/benz.jpeg">BENZ<span>()</span></a>
+          </td>
+      </tr>
+      <tr class="pt-3">
+       <td><a href="cars.html#mazda" class="mazda">
+           <img src="images/mazda.jpeg">
+       </td>
+      <td><a href="cars.html#subaru" class="subaru">
+           <img src="images/subaru.jpeg">SUBARU<span>()</span></a>
+      </td>
+       <td><a href="cars.html#suzuki">
+           <img src="images/suzuki.jpeg"></a>
+       </td>
+      </tr>
+        
+      <tr>
+       <td><a href="cars.html">
+           <img src="images/honda.jpeg"><span></span></a>
+       </td>
+       <td><a href="cars.html#bmw">
+           <img src="images/bmw.png">BMW<span>()</span></a>
+       </td>
+       <td><a href="cars.html#volks">
+           <img src="images/volks.jpeg">VOLKS<span>()</span></a>
+       </td>
+      </tr>
+      
+   
+  </table>
+</div>
+</div>
+<div class=" lg:hidden">
+<div class="bar"></div>
+<h2>search by Shape </h2>
+<div class="shapeList">
+  <table class="w-full">
+  <tr>
+   <td class="pt-3"><a href="shape.html" >
+       <img src="images/coupe.png " >COUPE</a>
+   </td>
+   <td class="pt-3"><a href="shape.html" >
+       <img src="images/hatchback.png" >HATCHBACK</a>
+   </td>
+   <td class="pt-3"><a href="shape.html" >
+       <img src="images/sedan.png" >SEDAN</a>
+   </td>
+  </tr>
+  <tr>
+   <td class="pt-3"><a href="shape.html" >
+       <img src="images/pickup.png" >PICKUP</a>
+   </td>
+   <td class="pt-3"><a href="shape.html" >
+       <img src="images/micro.png" >MICRO</a>
+   </td>
+   <td class="pt-3"><a href="shape.html" >
+       <img src="images/van.png" >VAN</a>
+   </td>
+  </tr>
+  <tr>
+   <td class="pt-3"><a href="shape.html" >
+       <img src="images/truck.png" >TRUCK</a>
+   </td>
+   <td class="pt-3"><a href="shape.html" >
+       <img src="images/wagon.png" >WAGON</a>
+   </td>
+  </tr>
+</table>
+</div>
+</div>
+
+        <style>
+            .pagination-buttons-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+  height: 2rem;
+  padding-left: 40%;
+}
+
+/* Style for pagination dots */
+.pagination-dot {
+  cursor: pointer;
+  font-size: 4rem;
+ margin-top: -2.5rem;
+   /* Adjust the margin as per your preference */
+}
+
+/* Style for active pagination dot */
+.pagination-dot.active {
+ 
+  color: blue; /* Change the color as per your preference */
+}
+
+/* Style for pagination arrows */
+.pagination-arrow {
+    margin: .5rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: blue;
+  /* Adjust the margin as per your preference */
+}
+
+            #paginationButtonsCarList,
+#paginationButtonsBestList,
+#paginationButtonsNewArrivals {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+          
+           
+          </style>
+          
+
+    <!-- inquiry -->
+        <div class="lg:hidden">
+            <div class="bar"></div>
+           <h2 class="inquire">Inquire Cars</h2>
+           
+            <div class="form border-2 border-grey bg-slate-200">
+               <form action="/inquiries" method="POST" id="inquiry2">
+             <select name="maker" id="makers" class="w-full p-1 bg-white border-2 ">
+               <option> Maker (A)</option>
+               <option> NISSAN()</option>
+               <option> TOYOTA()</option>
+               <option> MAZDA()</option>
+               <option> MITSUBISHI()</option>
+               <option> HONDA()</option>
+               <option> BENZ()</option>
+               <option> BMW()</option>
+               <option> SUZUKI()</option>
+               <option> OTHERS()</option>
+             </select>
+             <label for="models">Model</label>
+             <input type="text" id="models" placeholder="eg, noah, extrail, C 200 etc" name="model" class="w-full p-1 bg-white border-2">
+             <label for="contacts">contacts/email</label>  
+             <input type="text" name="contacts" id="contactss" class="w-full p-1 border-2" placeholder="how to reach you"></input>
+            
+              
+             <div class="select flex items-center">
+               <div class="left w-1/2">
+                     <select name="minengine" id="minengines" class=" p-1 w-4/5 bg-white border-2 ">
+                       <option>engine (min)</option>
+                       <option> 700 </option>
+                       <option>1500</option>
+                       <option>2500</option>
+                       <option>3000</option>
+                       <option>3500</option>
+                       <option>4000 </option>
+                       
+                     </select>  
+                     <input type="text" name="maxyear" id="maxyears" class=" p-1  border-2 " placeholder="maxyear"></input>
+                     <input type="text" name="minprice" id="minprices" class=" p-1  border-2 " placeholder="min price"></input>
+               </div>
+                    <div >
+                         <select name="maxdistance" id="maxdistances" class=" p-1 w-full bg-white border-2 ">
+                           <option>km (max)</option>
+                           <option>50 000 </option>
+                           <option>80 000</option>
+                           <option>100 000</option>
+                           <option>150 000</option>
+                           <option>170 000</option>
+                           <option>2017 </option>
+                           
+                         </select>  
+                         <select name="maxengine" id="maxengines" class=" p-1 w-full bg-white border-2 ">
+                           <option>engine (max)</option>
+                           <option> 700 </option>
+                           <option>1500</option>
+                           <option>2500</option>
+                           <option>3000</option>
+                           <option>3500</option>
+                           <option>4000 </option>
+                           
+                         </select>  
+                         <input type="text" name="maxprice" id="maxprices" class="w-3/4 p-1 border-2 " placeholder="maxprice"></input></br>
+                    </div>
+                   
+           </div>
+           <h2>comments</h2>
+           <textarea name="comment" id="comments" class=" p-1 w-full bg-white border-2 border-slate-800 "></textarea>
+            <button type="submit" class="w-full bg-red-600 text-center m-1 mb-8  border rounded ">submit</button>
+            </form>
+            </div>  
+           </div>
+        <!-- question and answer section starts -->
+        <div id="q&a" >
+        <div class="bar"></div>
+        <h2>Q&A</h2>
+        
+            <ul >
+                <li  class="quiz border-2 border-red-600 mt-2 py-2 px-4 ">
+                    <a class=" question cursor-pointer text-red-600 w-full flex justify-between ">
+                    <h4>Can Fessy Motors find a car that fits my needs best? </h4>
+                    <span  class="plus plus1 text-white h-6 w-6 p-1  bg-red-600  fas fa-plus "></span>
+                </a></li>
+                <p id="quiz1"class="detailz"> we import and export car across the globe</p>
+
+
+               <li  class="quiz border-2 border-red-600 mt-2 py-2 px-4 "><a class="question cursor-pointer text-red-600 w-full flex justify-between ">
+                     <h4>Can you ship a car across the country? </h4>
+                     <span  class="plus plus2 text-white h-6 w-6 p-1  bg-red-600  fas fa-plus "></span>
+                 </a></li>
+                 
+                 <p id="quiz2" class="detailz">Yes! we have the best drivers who does the delivery to all corners of the country
+                    and even outside the country we've done all our deliveries very seccessfully and on time
+                 </p>
+
+                 <li  class="quiz border-2 border-red-600 mt-2 py-2 px-4 "><a class="question cursor-pointer text-red-600 w-full flex justify-between ">
+                    <h4>Am afraid of the shipping cost might be very high?
+                        </h4><span class="plus plus3 text-white h-6 w-6 p-1  bg-red-600  fas fa-plus "></span>
+                    </a></li>
+                    <p id="quiz3" class="detailz ">fessy motors is the most friendly and
+                         provides delivery and has been providing delivery to the exact location of our customer 
+                        at a very friendly cost</p>
+                          
+                    
+            </ul>
+        </div>
+        
+        <div class="questions flex ">
+            <div class="left w-1/2 mr-1  ">
+                <div class="news" id="news">
+                   <div class="bar"></div>
+                   <h2 class="">News And Announcements</h2>
+                   <p>FESSY MOTORS IMPORTS LIMITED Is now the Best Car Dealership company In Kenya</p>
+                 </div>
+                 <div class="advantages" id="news">
+                    <div class="bar"></div>
+                    <h2 class="">Fessy Motors Advantages</h2>
+                    <p>
+                       We offer you the BEST quality services for all cars types both
+                       localy and from outside
+                       we offer shipping services also to your doorstep
+                       we offer advices and consultation conserning cars to our customers 
+                       reach to us and you will like our services.
+
+                    </p>
+                  </div>
+            </div>
+            <div class="right w-1/2 ml-1  ">
+                <div class="blogs" id="blogs">
+                   <div class="bar"></div>
+                   <h2 class="">Blog Articles (all)</h2>
+                   <p>Coming Soon.</p>
+                 </div>
+                 <div class="about " id="about">
+                    <div class="bar"></div>
+                    <h2 class="">About Fessy Motors </h2>
+                    <p>
+                        FESSY MOTORS IMPORTS LIMITED Exports and Imports
+                        best quality cars. Its fast and secure in shipping with vast 
+                        experience in the best and quality Cars
+
+                        For More INFO contact C.E.O Festus Musili:+254717111749
+                    </p>
+                  </div>
+            </div>
+        </div>
+
+        <!-- cemmonts and feedback form -->
+        <div class="bar"></div>
+        <h2 class="">Comment/ give feedback </h2>
+        <form action="/reviews" method="POST" id="reviewForm" class="comments mt-2 border border-stone-400 flex justify-center " ></br>
+            <div class="w-1/2">
+          <label for="name">name</label></br>
+          <input id="nameInput" class="border-2 p-1 w-full border-slate-400" type="text" name="name" placeholder="your name" required></br>
+          <label for="name">location</label></br>
+          <input id="locationInput" class="border-2 p-1 w-full border-slate-400" type="text" name="location" placeholder="city or town" required></br>
+          <label for="name">country</label></br>
+          
+          <input id="countryInput" class="border-2 p-1 w-full border-slate-400" type="text" name="country" placeholder="your country"></br>
+        </div><div class="smright ml-8 w-1/2 ">
+         
+          <label for="name">comment</label></br>
+         <textarea id="commentsInput" class="border-2 p-2 w-full border-slate-400" name="comments" id="" cols="" rows=""></textarea>
+         <button type="submit" class="p-2 w-full bg-emerald-600 rounded-md font-semibold text-white">Submit</button>
+        </div>
+        </form>
+
+        <!-- reviews from customers -->
+        <div class="bar"></div>
+        <h2 class="">Reviews <button class="bg-red-600 text-white rounded-md p-1 ml-4 w-16">more</button></h2>
+        <h4 class="font-semibold text-lg ml-3 mt-4">Voice from Fessy Motors Customers</h4>
+    <hr/>
+        <div  id="reviewList" class="p-4 flex w-full gap-4 overflow-scroll " name="reviewList">      
+        </div>
+
+        <div class="bar"></div>
+        <h2 class="">Contacts</h2>
+        <div class="contacts" id="contacts">
+            
+                
+                <div class="smallfooter ml-4 font-semibold text-lg">
+                <h4 class="text-2xl font-bold "> Fessy Motors Imports Ltd</h4>
+                <h1 class="font-semibold text-orange-700">Nairobi Headquaters</h1>
+                <span><i class="fa-solid fa-tty mr-2"></i>TEL: +254717111749</span></br>
+                <span><i class="fa-sharp fa-solid fa-phone mr-2"></i>PHONE: +254717111749</span></br>
+                <span><i class="fa-solid fa-envelope mr-2"></i>EMAIL: fessycarimports@gmail.com</span>
+            </div>
+            
+        </div>
+    </div>
+    
+<!-- section center ends -->
+
+
+<!-- all section on the right -->
+<div class="nav-right  ">
+<!-- sending inquiry in large screens hidden in small screen -->
+<div class="bar"></div>
+<h2 class="inquire">Inquire Cars</h2>
+
+ <div class="form border-2 border-grey bg-slate-200">
+    <form action="/inquiries" method="POST" id="inquiryForm">
+  <select name="maker" id="maker" class="w-full p-1 bg-white border-2 ">
+    <option> Maker (All)</option>
+    <option> NISSAN()</option>
+    <option> TOYOTA()</option>
+    <option> MAZDA()</option>
+    <option> MITSUBISHI()</option>
+    <option> HONDA()</option>
+    <option> BENZ()</option>
+    <option> BMW()</option>
+    <option> SUZUKI()</option>
+    <option> OTHERS()</option>
+  </select>
+  <label for="model">Model</label>
+  <input type="text" id="model" placeholder="eg, noah, extrail, C 200 etc" name="model" class="w-full p-1 bg-white border-2">
+  <label for="contacts">contacts/email</label>  
+  <input type="text" name="contacts" id="contacts" class="w-full p-1 border-2" placeholder="how to reach you"></input>
+ 
+   
+  <div class="select flex items-center">
+    <div class="left w-1/2">
+          <select name="minengine" id="minengine" class=" p-1 w-4/5 bg-white border-2 ">
+            <option>engine (min)</option>
+            <option> 700 </option>
+            <option> 1000 </option>
+            <option>1500</option>
+            <option> 2000 </option>
+            <option>2500</option>
+            <option>3000</option>
+            <option>3500</option>
+            <option>4000 </option>
+            <option> 5000 </option>
+            
+          </select>  
+          <input type="text" name="maxyear" id="maxyear" class=" p-1  border-2 " placeholder="maxyear"></input>
+          <input type="text" name="minprice" id="minprice" class=" p-1  border-2 " placeholder="min price"></input>
+    </div>
+         <div >
+              <select name="maxdistance" id="maxdistance" class=" p-1 w-full bg-white border-2 ">
+                <option>km (max)</option>
+                <option> 00 </option>
+                <option>50 000 </option>
+                <option>80 000</option>
+                <option>100 000</option>
+                <option>150 000</option>
+                <option>170 000</option>
+                <option>200 000 </option>
+                
+              </select>  
+              <select name="maxengine" id="maxengine" class=" p-1 w-full bg-white border-2 ">
+                <option>engine (max)</option>
+               
+            <option>1500</option>
+            <option> 2000 </option>
+            <option>2500</option>
+            <option>3000</option>
+            <option>3500</option>
+            <option>4000 </option>
+            <option> 5000 </option>
+                
+              </select>  
+              <input type="text" name="maxprice" id="maxprice" class="w-3/4 p-1 border-2 " placeholder="maxprice"></input></br>
+         </div>
+        
+</div>
+<h2>comments</h2>
+<textarea name="comment" id="comment" class=" p-1 w-full bg-white border-2 border-slate-800 "></textarea>
+ <button type="submit" class="w-full bg-red-600 text-center m-1 mb-8  border rounded ">submit</button>
+ </form>
+ </div>
+
+
+    <div class="countries columns-3 mt-4">
+       <ul>
+        <li class="m-2">
+            <a class="cursor-po src="images/burundi.png" class="object-cover ">BURUNDI</a>
+        </li>
+        <li class="m-2">
+            <a> <img src="images/comoros.png">COMOROS</a>
+        </li>
+        <li>
+            <a class="cursor-pointer"> <img src="images/djibouti.png">DJIBOUTI</a>
+        </li>
+        <li class="m-2">
+            <a class="cursor-pointer"> <img src="images/eritea.png">ERITREA</a>
+        </li>
+        <li class="m-2">
+            <a class="cursor-pointer"> <img src="images/ethiopia.png">ETHIOPIA</a>
+        </li>
+        <li class="m-2">
+            <a class="cursor-pointer"> <img src="images/kenya.png">KENYA</a>
+        </li>
+        <li class="m-2">
+            <a class="cursor-pointer"> <img src="images/rwanda.png">RWANDA</a>
+        </li>
+        <li class="m-2">
+            <a class="cursor-pointer"> <img src="images/somalia.png">SOMALIA</a>
+        </li>
+        <li class="m-2">
+            <a class="cursor-pointer"> <img src="images/uganda.png">UGANDA</a>
+        </li>
+        <li class="m-2">
+            <a class="cursor-pointer"> <img src="images/tanzania.png">TANZANIA</a>
+        </li>
+        <li class="m-2">
+            <a class="cursor-pointer"> <img src="images/congo.png">TANZANIA</a>
+        </li>
+        <li class="m-2">
+            <a class="cursor-pointer"> <img src="images/zibambwe.svg.png">ZIBAMBWE</a>
+        </li>
+       </ul>
+    </div>
+
+</div>
+
+</div>
+</section>
+
+
+
+<!-- links sections starts here -->
+<section class=" mt-3">
+    <div class="bg-slate-200 h-16 mt-3" >
+        <div class="slinks flex justify-center ">
+          <a>  <img src="images/th (4).jpeg" class="h-12 m-2"></a>
+           <a href="https://www.instagram.com/fessymotorsimports/"> <img src="images/th (3).jpeg" class="h-12 m-2 ml-8"></a>
+            <a href="https://www.facebook.com/profile.php?id=100065128466178"><img src="images/th (2).jpeg" class="h-12 m-2 ml-8"></a>
+        </div>
+     </div>
+
+
+     <!-- footer starts -->
+    <div class="footer bg-slate-900 flex">
+        <div class="flex text-white justify-center">
+           
+                <img src="images/logo3.png" class="w-28">
+                <div class="smallfooter ml-2 hidden">
+                <h4 class="text-xl font-bold"> Fessy Motors Imports Ltd</h4>
+                <h1 class="font-semibold ">Nairobi Headquaters</h1>
+                <span>TEL:+254700914360</span></br>
+                <span>PHONE:+254700914360</span></br>
+                <span>EMAIL:Fessycarimports@gmail.com</span>
+            
+            </div>
+     
+<div class=" footerlist flex">
+            <div class="p-4 ">
+                <ul>
+                    <li class="font-semibold mb-6"><h3>Search By Maker</h3>
+                    </li>
+                    <li class="p-1">
+                        <a class="hover:underline cursor-pointer m-3">TOYOTA (2)</a>
+                    </li>
+                    <li class="p-1">
+                        <a class="hover:underline cursor-pointer m-3">NISSAN (2)</a>
+                    </li>
+                    <li class="p-1">
+                        <a class="hover:underline cursor-pointer m-3">MITSUBISHI(2)</a>
+                    </li>
+                    <li class="p-1">
+                        <a class="hover:underline cursor-pointer m-3">HONDA(2)</a>
+                    </li>
+                    <li class="p-1">
+                        <a class="hover:underline cursor-pointer m-3">MAZDA (2)</a>
+                    </li>
+                    <li class="p-1">
+                        <a class="hover:underline cursor-pointer m-3">SUBARU (2)</a>
+                    </li>
+                    <li class="p-1">
+                        <a class="hover:underline cursor-pointer m-3">SUZUKI (2)</a>
+                    </li>
+                    <li class="p-1">
+                        <a class="hover:underline cursor-pointer m-3">VOLKSWAGEN (2)</a>
+                    </li>
+                    <li class="p-1">
+                        <a class="hover:underline cursor-pointer m-3">BENZ (2)</a>
+                    </li>
+                    <li class="p-1">
+                        <a class="hover:underline cursor-pointer m-3">LEXUS (2)</a>
+                    </li>
+                    <li class="p-1">
+                        <a class="hover:underline cursor-pointer m-3">AUDI (2)</a>
+                    </li>
+                    <li class="p-1">
+                        <a class="hover:underline cursor-pointer m-3">BMW (2)</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="p-4 ">
+                <ul>
+                    <li class="font-semibold mb-6"><h3>Search By Shape</h3>
+                    </li>
+                <li class="p-1">
+                    <a href="shape.html" class="hover:underline cursor-pointer m-3">COUPE</a>
+                </li>
+                <li class="p-1">
+                    <a href="shape.html" class="hover:underline cursor-pointer m-3">SEDAN</a>
+                </li>
+                <li class="p-1">
+                    <a href="shape.html" class="hover:underline cursor-pointer m-3">HATCHBACK</a>
+                </li>
+                <li class="p-1">
+                    <a href="shape.html" class="hover:underline cursor-pointer m-3">WAGON</a>
+                </li>
+                <li class="p-1">
+                    <a href="shape.html" class="hover:underline cursor-pointer m-3">SUV</a>
+                </li>
+                <li class="p-1">
+                    <a href="shape.html" class="hover:underline cursor-pointer m-3">VAN</a>
+                </li>
+                <li class="p-1">
+                    <a href="shape.html" class="hover:underline cursor-pointer m-3">TRUCK</a>
+                </li>
+            </div>
+
+            <div class="p-4 ">
+                <ul>
+                    <li class="font-semibold mb-6"><h3>Search By FOB Price</h3>
+                    </li>
+                    <li class="p-1">
+                        <a class="hover:underline cursor-pointer">Over $7,000</a>
+                    </li>
+                    <li class="p-1">
+                        <a class="hover:underline cursor-pointer ">Under $7,000</a>
+                    </li>
+                    <li class="p-1">
+                        <a class="hover:underline cursor-pointer">Under $6,000</a>
+                    </li>
+                    <li class="p-1">
+                        <a class="hover:underline cursor-pointer">Under $5,000</a>
+                    </li>
+                    <li class="p-1">
+                        <a class="hover:underline cursor-pointer">Under $3,500</a>
+                    </li>
+                    <li class="p-1">
+                        <a class="hover:underline cursor-pointer">Under $2,500</a>
+                    </li>
+                    <li class="p-1">
+                        <a class="hover:underline cursor-pointer">Under $1,000</a>
+                    </li>
+            </div>
+            <div class="p-4 ">
+                <ul>
+                    <li class="font-semibold mb-6"><h3>About Us</h3>
+                    </li>
+                    <li class="p-1">
+                        <a class=" font-semibold">About Fessy Motors</a>
+                    </li>
+                    <li class="p-1">
+                        <a class="hover:underline cursor-pointer ">Contacts</a>
+                    </li>
+                    <li class="p-1">
+                        <a class="hover:underline cursor-pointer ">Yard Facilities</a>
+                    </li>
+                    <li class="p-1">
+                        <a class="hover:underline cursor-pointer ">Bank Information</a>
+                    </li>
+                    <li class="p-1">
+                        <a class="hover:underline cursor-pointer">Company Profile</a>
+                    </li>
+                    <li class="p-1">
+                        <a class="hover:underline cursor-pointer ">Access</a>
+                    </li>
+                    </ul>
+                    <ul>
+                    </div>
+                       
+        </div>
+        </div>
+
+    </div>
+    <div class="h-8 bg-red-600 flex justify-between pl-16 pr-16 text-white">
+        <p><span>@</span>copyright 2025- Fessy Motors Imports LTD. All rights Reserved</p>
+       
+    </div>
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- <script src="/server.js"> </script> -->
+    <script src="index2.js"></script>
+    <script src="script.js"></script>
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</body>
+</html>
